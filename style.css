@@ -1,0 +1,317 @@
+*{
+  box-sizing: border-box;
+}
+header.row{
+  background: gray;
+}
+.icon img{
+  width: 20%;
+  height: 100%;
+}
+
+div.form textarea{
+  width:100%;
+}
+div.icon{
+  padding: 20px;
+}
+
+.form form{
+  padding-top:10px;
+}
+
+.form{
+  border: 1px solid black;
+}
+.text-box{
+  position: relative;
+  display: block;
+  margin-top:20px;
+}
+.text-box span{
+  display: block;
+  position: relative;
+  width: 90%;
+  border-bottom: 1px solid black;
+}
+label.radio-button{
+  display: inline-block;
+  position: relative;
+}
+
+label.radio-button span:hover {
+  border-radius: 0px;
+  transition: .2s linear;
+  transform: rotateZ(45deg);
+}
+label.radio-button span{
+  display: inline-block;
+  position: relative;
+  border: 1px solid black;
+  width:13px;
+  height:13px;
+  border-radius: 50px;
+  transition: .2s linear;
+}
+label.radio-button input{
+  display: none;
+}
+label.radio-button input:checked ~span {
+  background: black;
+  border-radius: 0;
+  transform: rotateZ(45deg);
+}
+select.combo-box{
+  display: block;
+  position: relative;
+  width: 90%;
+  border: none;
+  border-bottom:solid black 1px;
+  outline: none;
+}
+.text-box input{
+  display: block;
+  position: absolute;
+  top:-95%;
+  outline: none;
+  border: none;
+  width: 90%;
+}
+.testimony-header{
+  text-align: center;
+  padding: 20px;
+  border: 1px solid black;
+}
+.text-box input:focus ~ label, .text-box input:valid ~ label{
+  display: block;
+  position: absolute;
+  top:-180%;
+  transition: .2s linear;
+}
+
+.text-box label{
+  display: block;
+  position: absolute;
+  top:-90%;
+  pointer-events: none;
+  transition: .5s linear;
+}
+.row{
+  display: flex;
+  flex-wrap: wrap;
+}
+.testing{
+  border: 1px solid black;
+  padding: 10px;
+}
+.testing img{
+  display: block;
+  position: relative;
+  width: 50%;
+  height: 50%;
+  align-items: center;
+}
+[class*="col-"]{
+  float: left;
+  padding: 10px;
+  word-wrap: break-word;
+}
+.landing-left{
+  position: relative;
+  display: block;
+  margin-top:10px;
+  padding: 20px;
+}
+.landing-left h2{
+  position: relative;
+  display: block;
+}
+.landing-right{
+  border: 1px solid black;
+  margin-top:10px;
+  padding: 20px;
+}
+
+.footer{
+  text-align: center;
+  padding-top: 5%;
+  padding-bottom: 5%;
+  background: gray;
+}
+.menubar-responsive li{
+  list-style: none;
+  margin-top: 10px;
+}
+.menubar-responsive li a{
+  text-decoration: none;
+  color: black;
+}
+@media only screen and (max-width:600px) {
+  .col-sm-1{width:8.33%;}
+  .col-sm-2{width:16.66%;}
+  .col-sm-3{width:25%;}
+  .col-sm-4{width:33.33%;}
+  .col-sm-5{width:41.66%;}
+  .col-sm-6{width:50%;}
+  .col-sm-7{width:58.33%;}
+  .col-sm-8{width:66.66%;}
+  .col-sm-9{width:75%;}
+  .col-sm-10{width:83.33%;}
+  .col-sm-11{width:91.66%;}
+  .col-sm-12{width:100%;}
+  div.menubar{
+    display: none;
+  }
+  div.responsive-icon{
+    display: block;
+    padding-top:30px;
+  }
+  .menubar-responsive{
+    height: 0;
+    overflow: hidden;
+    display: block;
+    position: relative;
+  }
+  .menubar-responsive.show{
+    height: 100%;
+    display: block;
+    position: relative;
+    background: #d0d3d4;
+  }
+  #checkbox-responsive{
+    display: none;
+    cursor: pointer;
+  }
+  .menubar-responsive li a{
+    display: block;
+    position: relative;
+    width: 100%;
+  }
+  .menubar-responsive li a:hover{
+    color: gray;
+    background: black;
+  }
+  .menubar-responsive li a{
+    padding: 10px;
+  }
+}
+
+
+@media only screen and (min-width:600px) {
+  .col-md-1{width:8.33%;}
+  .col-md-2{width:16.66%;}
+  .col-md-3{width:25%;}
+  .col-md-4{width:33.33%;}
+  .col-md-5{width:41.66%;}
+  .col-md-6{width:50%;}
+  .col-md-7{width:58.33%;}
+  .col-md-8{width:66.66%;}
+  .col-md-9{width:75%;}
+  .col-md-10{width:83.33%;}
+  .col-md-11{width:91.66%;}
+  .col-md-12{width:100%;}
+  div.menubar{
+    display: none;
+  }
+  div.responsive-icon{
+    display: block;
+    padding-top:30px;
+  }
+  .menubar-responsive{
+    height: 0;
+    overflow: hidden;
+    display: block;
+    position: relative;
+  }
+  .menubar-responsive.show{
+    height: 100%;
+    display: block;
+    position: relative;
+    background: #d0d3d4
+  }
+  #checkbox-responsive{
+    display: none;
+    cursor: pointer;
+  }
+  .menubar-responsive li a{
+    display: block;
+    position: relative;
+    width: 100%;
+  }
+  .menubar-responsive li a:hover{
+    color: gray;
+    background: black;
+  }
+  .menubar-responsive li a{
+    padding: 10px;
+  }
+}
+
+@media only screen and (min-width:900px) {
+  .col-lg-1{width:8.33%;}
+  .col-lg-2{width:16.66%;}
+  .col-lg-3{width:25%;}
+  .col-lg-4{width:33.33%;}
+  .col-lg-5{width:41.66%;}
+  .col-lg-6{width:50%;}
+  .col-lg-7{width:58.33%;}
+  .col-lg-8{width:66.66%;}
+  .col-lg-9{width:75%;}
+  .col-lg-10{width:83.33%;}
+  .col-lg-11{width:91.66%;}
+  .col-lg-12{width:100%;}
+  div.menubar{
+    display: block;
+    padding-top: 30px;
+  }
+  div.menubar a{
+    padding: 10px;
+    text-decoration: none;
+    color: black;
+  }
+  div.menubar a:hover{
+    background: black;
+    color: gray;
+  }
+  div.responsive-icon{
+    display: none;
+  }
+  .menubar-responsive.show{
+    display: none;
+  }
+}
+
+@media only screen and (min-width:1200px) {
+  .col-xl-1{width:8.33%;}
+  .col-xl-2{width:16.66%;}
+  .col-xl-3{width:25%;}
+  .col-xl-4{width:33.33%;}
+  .col-xl-5{width:41.66%;}
+  .col-xl-6{width:50%;}
+  .col-xl-7{width:58.33%;}
+  .col-xl-8{width:66.66%;}
+  .col-xl-9{width:75%;}
+  .col-xl-10{width:83.33%;}
+  .col-xl-11{width:91.66%;}
+  .col-xl-12{width:100%;}
+
+  div.menubar{
+    display: block;
+    padding-top: 30px;
+  }
+
+  div.menubar a{
+    padding: 10px;
+  }
+  div.menubar a:hover{
+    background: black;
+    color: gray;
+  }
+
+  div.responsive-icon{
+    display: none;
+  }
+  .menubar-responsive.show{
+    display: none;
+  }
+}
